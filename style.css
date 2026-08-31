@@ -168,4 +168,81 @@ footer {
     text-align: center;
     padding: 25px 0;
     font-size: 0.9rem;
+}/* =======================================================
+   REGRAS EXCLUSIVAS PARA CELULARES (Telas até 768px)
+   ======================================================= */
+@media (max-width: 768px) {
+
+    /* 1. Ajuste do Menu Superior (Header) */
+    .navbar {
+        flex-direction: column; /* Coloca o nome e os links em linhas separadas */
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap; /* Permite que os botões do menu quebrem linha se necessário */
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+        background-color: rgba(255, 255, 255, 0.05); /* Cria um fundo sutil nos links */
+        border-radius: 4px;
+    }
+
+    /* 2. Ajuste do Banner Principal (Hero) */
+    .hero {
+        height: auto;
+        min-height: 70vh; /* Ajusta a altura para não cortar em telas baixas */
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem; /* Reduz o título para não estourar a tela */
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    /* 3. Espaçamento Geral dos Blocos */
+    .container {
+        padding: 50px 20px; /* Dá respiro nas laterais para o texto não colar na borda */
+    }
+
+    .container h2 {
+        font-size: 1.75rem;
+    }
+
+    /* 4. Cards das Áreas de Atuação (Empilhados e Largos) */
+    .cards {
+        flex-direction: column; /* Empilha um card abaixo do outro */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 100%; /* Faz o card ocupar a largura total do celular */
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    /* 5. Botões Touch (Fáceis de clicar com o polegar) */
+    .btn {
+        width: 100%; /* Botão do WhatsApp e de Consulta ocupam a largura inteira */
+        display: block;
+        text-align: center;
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
 }
